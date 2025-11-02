@@ -1,0 +1,91 @@
+# 🌍 Online Travel Booking Platform
+
+The **Online Travel Booking Platform** allows users to seamlessly **book flights, hotels, and rental cars**.  
+It supports three user roles: **Admin**, **Travel Agent**, and **Traveler**, each with their own dashboard and functionalities.
+
+---
+
+## 🧭 **Project Structure**
+
+OnlineTravelBooking/
+│
+├── lib/ → JDBC driver (e.g., mysql-connector-j-8.4.0.jar)
+│
+├── resources/ → Static files, icons, and database script
+│ └── db.sql
+│
+├── src/
+│ ├── main/ → Entry point (Main.java)
+│ ├── model/ → Entity classes (User, Booking, Flight, Hotel, etc.)
+│ ├── dao/ → Data Access Layer (DBConnection, UserDAO, etc.)
+│ ├── service/ → Business logic (BookingService, PaymentService, etc.)
+│ ├── gui/ → Swing GUI files (LoginFrame, DashboardFrame, etc.)
+│ └── util/ → Utility classes (Validator, Constants, DBUtil)
+│
+└── README.md
+
+
+---
+
+## 🧑‍💻 **Technologies Used**
+
+| Component | Technology |
+|------------|-------------|
+| Language | Java 17+ |
+| Database | MySQL |
+| GUI | Java Swing |
+| Build Tool | Manual (javac/java) or IDE (VS Code / IntelliJ) |
+| JDBC Driver | MySQL Connector/J 8.x |
+
+---
+
+
+👥 User Roles & Dashboards
+👑 Admin
+
+Manage users (create/update/delete)
+
+Approve/reject travel listings
+
+Configure system settings
+
+View booking statistics
+
+🧳 Travel Agent
+
+Add and manage travel listings (flights, hotels, cars)
+
+Communicate with users
+
+Track and manage bookings
+
+✈️ Traveler
+
+Book flights, hotels, and rental cars
+
+Manage travel itineraries
+
+View and cancel bookings
+
+🗄️ Database Schema (Summary)
+Table	Purpose
+users	Stores Admins, Agents, and Travelers
+flights	Flight listings
+hotels	Hotel listings
+car_rentals	Rental car listings
+bookings	Stores user bookings
+🧠 Future Enhancements
+
+Integrate online payment gateway (Stripe/Razorpay)
+
+Implement RESTful APIs
+
+Add email/SMS notifications
+
+Migrate from Swing to JavaFX or Web frontend
+
+👩‍💻 Author
+
+Anjali Dwivedi
+B.Tech CSE — Project for GUVI Geek Network Pvt. Ltd.
+© 2024 GUVI Geek Network Pvt. Ltd. All rights reserved.
